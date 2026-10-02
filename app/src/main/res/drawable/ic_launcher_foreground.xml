@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Shopping bag body -->
+    <path
+        android:pathData="M30,40 L78,40 L74,78 C73.7,81.3 70.9,84 67.6,84 L40.4,84 C37.1,84 34.3,81.3 34,78 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="30"
+                android:startY="40"
+                android:endX="78"
+                android:endY="84"
+                android:type="linear">
+                <item android:color="#F97316" android:offset="0.0" />
+                <item android:color="#EA580C" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bag handles -->
+    <path
+        android:pathData="M44,40 V32 C44,26.5 48.5,22 54,22 C59.5,22 64,26.5 64,32 V40"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+
+    <!-- Discount % Percentage Symbol on bag -->
+    <!-- Top circle -->
+    <path
+        android:pathData="M48,54m-3.5,0a3.5,3.5 0 1 1,7 0a3.5,3.5 0 1 1,-7 0"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Slash line -->
+    <path
+        android:pathData="M44,69 L64,49"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
+
+    <!-- Bottom circle -->
+    <path
+        android:pathData="M60,64m-3.5,0a3.5,3.5 0 1 1,7 0a3.5,3.5 0 1 1,-7 0"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Sparkle star -->
+    <path
+        android:pathData="M78,28 L80,22 L82,28 L88,30 L82,32 L80,38 L78,32 L72,30 Z"
+        android:fillColor="#FBBF24" />
+
+</vector>

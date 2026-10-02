@@ -1,0 +1,6 @@
+{
+  "name": "Deals Bazar",
+  "description": "Daraz Affiliate & Smart Shopping Deals app with live curated discounts, direct order redirect, and zero-investment affiliate earning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

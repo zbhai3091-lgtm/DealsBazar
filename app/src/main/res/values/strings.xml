@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Deals Bazar</string>
+    <string name="title_deals">Deals</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_admin">Add Deal</string>
+    <string name="title_guide">Earning Guide</string>
+    <string name="btn_buy_daraz">Buy on Daraz</string>
+    <string name="btn_share_whatsapp">Share on WhatsApp</string>
+</resources>

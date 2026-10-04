@@ -7,4 +7,5 @@
     <string name="title_guide">Earning Guide</string>
     <string name="btn_buy_daraz">Buy on Daraz</string>
     <string name="btn_share_whatsapp">Share on WhatsApp</string>
+    <string name="default_web_client_id" translatable="false">8916838561-8e3ajra6kvna5j9g35tfpon7ondr43es.apps.googleusercontent.com</string>
 </resources>

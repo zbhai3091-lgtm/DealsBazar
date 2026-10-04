@@ -33,19 +33,14 @@ jobs:
         touch .env
         chmod +x gradlew || true
 
-    - name: Create fixed debug keystore (first time only)
-      run: |
-        if [ ! -f debug.keystore ]; then
-          keytool -genkeypair -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add -f debug.keystore
-          git commit -m "Add fixed debug keystore"
-          git push || true
-        fi
-
     - name: Show SHA-1
-      run: keytool -list -v -keystore debug.keystore -storepass android -alias androiddebugkey | grep -E "SHA1|SHA256"
+      continue-on-error: true
+      run: |
+        if [ -f debug.keystore ]; then
+          keytool -list -v -keystore debug.keystore -storepass android -alias androiddebugkey | grep -E "SHA1|SHA256"
+        else
+          echo "debug.keystore NOT FOUND"
+        fi
 
     - name: Build Debug APK
       run: gradle assembleDebug --stacktrace --no-daemon
